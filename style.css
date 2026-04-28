@@ -1,0 +1,916 @@
+CSS STYLES
+
+
+/*General CSS Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #000; /* Deep black like the Tesla background */
+    background-image: url(./assests/my\ photo.png);
+    background-size: 500px 500px;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+HTML
+
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koketso Maake | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="186009.png" alt="Koketso Maake" class="logo-img">
+            <svg class="logo-text-svg" viewBox="0 0 200 200">
+                <defs>
+                    <path id="circlePath" d="M 100, 100 m -80, 0 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0" fill="none" />
+                </defs>
+                <text class="curved-text">
+                    <textPath href="#circlePath" startOffset="50%" text-anchor="middle">
+                        GRAPHIC DESIGN SOLUTIONS
+                    </textPath>
+                </text>
+            </svg>
+        </div>
+        <nav>
+            <a href="#web">Web Dev</a>
+            <a href="#design">Graphic Design</a>
+            <a href="#about">About</a>
+        
+        
+        
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Koketso Maake</h1>
+            <p>Full-Stack Student & Professional Graphic Designer</p>
+            <div class="hero-btns">
+                <a href="#web" class="btn-primary">View Projects</a>
+                <a href="#design" class="btn-secondary">Design Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="web" class="projects">
+        <h2 class="section-title">Web Development</h2>
+        <div class="project-card main-feature">
+            <img src="your-tesla-screenshot.jpg" alt="High Performance Motors Project">
+            <div class="card-overlay">
+                <h3>High Performance Motors</h3>
+                <p>A technical UI clone built with HTML, CSS, and deployed on Netlify.</p>
+                <div class="btn-group">
+                    <a href="https://koketso-tesla-assignment.netlify.app/" target="_blank" class="btn-glass">Live Demo</a>
+                    <a href="https://github.com/Kmaake-crypto/TESLA-ASSIGNMENT.git" target="_blank" class="btn-glass">GitHub</a>
+                </div>
+
+  <a href="https://koketso-ui-screenshot.netlify.app/" target="_blank" class="project-btn">
+    
+  </a>
+</div>
+    </section>
+
+    <section id="design" class="design-grid">
+        <h2 class="section-title">Graphic Design Projects</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="Tech Titans Dream Achievers Logo.png.jpg" alt="Tech Titans Branding">
+                <div class="item-info">
+                    <h4>Tech Titans</h4>
+                    <span>Brand Identity & Logo Design</span>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="Living Toptier With God Logo.png.png" alt="Living Together With God">
+                <div class="item-info">
+                    <h4>Living Together With God</h4>
+                    <span>Circular Logo Design</span>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="Mordern Dance Event poster.png.png" alt="Modern Dance Event">
+                <div class="item-info">
+                    <h4>Modern Dance</h4>
+                    <span>Event Poster Design</span>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="Music Festival Poster.png.png" alt="Music Festival">
+                <div class="item-info">
+                    <h4>Music Festival</h4>
+                    <span>Concert Poster Design</span>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="Skaters Event Poster.png.png" alt="Skate And Destroy">
+                <div class="item-info">
+                    <h4>Skate And Destroy</h4>
+                    <span>Sports Event Poster</span>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="Popetry Reading Event Poster.png.png" alt="Open Mic Poetry Reading">
+                <div class="item-info">
+                    <h4>Poetry Reading</h4>
+                    <span>Cultural Event Poster</span>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="soccer tournament poster.png.png" alt="Indoor Soccer Tournament">
+                <div class="item-info">
+                    <h4>Soccer Tournament</h4>
+                    <span>Sports Event Flyer</span>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="25 Main Event Info Poster.png.png" alt="Main Event Poster">
+                <div class="item-info">
+                    <h4>Main Event</h4>
+                    <span>Event Registration Flyer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="about" class="about-section">
+
+    <h1>About Me</h1>
+
+    <p>
+        I am <strong>Koketso Maake</strong>, a Full-Stack Web Developer student and professional Graphic Designer.
+        I design and build digital experiences that are visually striking and functionally powerful.
+        With a strong foundation in HTML and CSS, I create responsive, user-focused websites while crafting bold,
+        memorable graphic designs that communicate brand identity with clarity and impact.
+    </p>
+
+    <p>
+        My work sits at the intersection of creativity and technology—where clean code meets impactful design.
+        I focus on building intuitive user interfaces, responsive layouts, and visually compelling designs
+        that elevate brands and enhance user experience.
+    </p>
+
+    <h2>Web Development Projects</h2>
+
+    <div class="project-card">
+        <h3>High Performance Motors (Tesla Landing Page Clone)</h3>
+        <p>
+            A modern UI-focused web project designed to showcase performance and precision.
+        </p>
+
+        <ul>
+            <li>Built using HTML and CSS</li>
+            <li>Fully responsive layout</li>
+            <li>Clean and structured UI</li>
+            <li>Deployed for live interaction</li>
+        </ul>
+
+        <h4>Key Features:</h4>
+        <ul>
+            <li>Smooth layout structure</li>
+            <li>Clear content hierarchy</li>
+            <li>Interactive navigation buttons</li>
+        </ul>
+    </div>
+
+    <h2>Graphic Design Projects</h2>
+
+    <div class="design-grid">
+        <div class="design-card">
+            <h4>Tech Titans</h4>
+            <p>A sleek and modern logo focused on innovation, growth, and strong brand identity.</p>
+        </div>
+
+        <div class="design-card">
+            <h4>Living Together With God</h4>
+            <p>A symbolic design centered around unity, faith, and emotional storytelling.</p>
+        </div>
+
+        <div class="design-card">
+            <h4>Modern Dance Poster</h4>
+            <p>A high-energy design with bold typography and dynamic visual flow.</p>
+        </div>
+
+        <div class="design-card">
+            <h4>Music Festival Poster</h4>
+            <p>A vibrant, retro-modern poster designed for strong visual impact.</p>
+        </div>
+    </div>
+
+    <h2>What I Bring</h2>
+
+    <ul class="skills-list">
+        <li>Creative Problem Solving</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Branding & Visual Identity</li>
+        <li>Responsive Design</li>
+        <li>Continuous Growth</li>
+    </ul>
+
+    <!-- CTA SECTION -->
+    <div class="cta-container">
+        <h3>Let’s Build Something Impactful</h3>
+        <p>
+            I am open to opportunities, collaborations, and creative challenges.
+        </p>
+
+        <div class="cta-buttons">
+            <a href="#" class="btn">View Projects</a>
+            <a href="#" class="btn btn-outline">Contact Me</a>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out for collaborations, inquiries, or just to say hello!</p>
+    <div class="socials">
+        <a href="mailto: koketsomaake295@gmail.com">
+            <img src="/Solutions and Designs Portfolio/gmail.png" alt="Email Icon" class="social-icon">
+        </a>
+        <a href ="https://www.linkedin.com/in/koketso-maake-991540334" target="_blank">
+            <img src="/Solutions and Designs Portfolio/linkedin.png" alt="LinkedIn Icon" class="social-icon">
+        </a>
+        <a href="https://github.com/Kmaake-crypto" target="_blank">
+            <img src="/Solutions and Designs Portfolio/github.png" alt="GitHub Icon" class="social-icon">
+        </a>
+        <a href="https://discord.com/channels/@me" target="_blank">
+            <img src="/Solutions and Designs Portfolio/discord.png" alt="Discord Icon" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/koketso_graced/" target="_blank">
+            <img src="/Solutions and Designs Portfolio/instagram.png" alt="Instagram Icon" class="social-icon"> 
+        </a>
+        <a href="tel:+2761-636-8479" class="phone-contact">
+            <img src="/Solutions and Designs Portfolio/phone.png" alt="Phone Number +2761-636-8479" class="social-icon">
+            <span>+2761-636-8479</span>
+        </a>
+    </div>
+</section>
+    <footer>
+        <p>&copy; 2026 Koketso Maake. Graphic Design Solutions.</p>
+    </footer>
+
+</body>
+</html>
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Header (Floating Glass Effect) */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+/* Logo with Image */
+.logo {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #f4d03f, #d4af37 40%, #000 70%);
+    border: 3px solid #d4af37;
+    box-shadow: 
+        0 0 0 3px #000,
+        0 0 20px rgba(212, 175, 55, 0.6),
+        inset 0 2px 5px rgba(212, 175, 55, 0.3),
+        inset 0 -2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.logo-img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.85;
+    z-index: 5;
+}
+
+.logo-text-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 8px rgba(212, 175, 55, 0.5));
+}
+
+.curved-text {
+    font-weight: 900;
+    font-size: 16px;
+    fill: #d4af37;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    text-anchor: middle;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Hero Section (Vertical Center) */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-image:url(./assests/my\ photo.png) 
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        
+    background-size: 600px 600px;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #a1a1a1;
+    margin-bottom: 30px;
+}
+
+/* Buttons (Tesla Style) */
+.btn-primary, .btn-secondary, .btn-glass {
+    padding: 12px 40px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+    display: inline-block;
+    margin: 10px;
+}
+
+.btn-primary { background: #393c41; color: #fff; }
+.btn-secondary { background: #e2e3e3; color: #393c41; }
+.btn-glass { border: 2px solid #fff; color: #fff; }
+
+.btn-primary:hover { background: #222; }
+.btn-glass:hover { background: #fff; color: #000; }
+
+/* Design Grid Layout */
+.design-grid {
+    background: #000;
+    padding: 80px 0;
+    position: relative;
+    z-index: 5;
+}
+
+.section-title {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #d4af37 0%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 50px 100px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    transition: all 0.5s ease;
+    border: 2px solid rgba(212, 175, 55, 0.2);
+    aspect-ratio: 1;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.grid-item:hover {
+    transform: translateY(-15px) scale(1.02);
+    border-color: #d4af37;
+    box-shadow: 0 15px 50px rgba(212, 175, 55, 0.3);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    transition: opacity 0.4s ease;
+}
+
+.grid-item:hover img {
+    opacity: 0.4;
+}
+
+.item-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+    text-align: center;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.95) 50%, #000 100%);
+    transform: translateY(50px);
+    transition: transform 0.4s ease;
+}
+
+.grid-item:hover .item-info {
+    transform: translateY(0);
+}
+
+.item-info h4 { 
+    margin-bottom: 8px; 
+    color: #d4af37;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.item-info span { 
+    color: #a8a8a8;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.item-description {
+    font-size: 12px;
+    color: #999;
+    margin-top: 8px;
+    line-height: 1.4;
+    display: none;
+}
+
+.grid-item:hover .item-description {
+    display: block;
+}
+
+/* About Section */
+.about-section {
+    background: #000;
+    padding: 100px 50px;
+    position: relative;
+    z-index: 5;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.about-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #d4d4d4;
+    text-align: justify;
+}
+
+/* Project Details */
+.project-details {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    padding: 60px 50px;
+    position: relative;
+    z-index: 5;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.detail-item {
+    background: rgba(212, 175, 55, 0.05);
+    padding: 25px;
+    border-left: 3px solid #d4af37;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.detail-item:hover {
+    background: rgba(212, 175, 55, 0.1);
+    transform: translateX(5px);
+}
+
+.detail-item h4 {
+    color: #d4af37;
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.detail-item p {
+    color: #b8b8b8;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.detail-item ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.detail-item li {
+    color: #b8b8b8;
+    font-size: 14px;
+    padding: 5px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.detail-item li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #d4af37;
+}
+
+/* Skills Section */
+.skills-section {
+    background: #000;
+    padding: 100px 50px;
+    position: relative;
+    z-index: 5;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 50px auto 0;
+}
+
+.skill-card {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%);
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    text-align: center;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    border-color: #d4af37;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
+    box-shadow: 0 15px 50px rgba(212, 175, 55, 0.2);
+}
+
+.skill-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.skill-card h4 {
+    color: #d4af37;
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.skill-card p {
+    color: #b8b8b8;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    padding: 100px 50px;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    border-top: 2px solid rgba(212, 175, 55, 0.3);
+}
+
+.cta-content h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #d4af37;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.cta-content p {
+    font-size: 18px;
+    color: #b8b8b8;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary-large, .btn-secondary-large {
+    padding: 16px 50px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.4s ease;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.btn-primary-large {
+    background: #d4af37;
+    color: #000;
+}
+
+.btn-primary-large:hover {
+    background: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 40px rgba(212, 175, 55, 0.3);
+}
+
+.btn-secondary-large {
+    background: transparent;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+}
+
+.btn-secondary-large:hover {
+    background: #d4af37;
+    color: #000;
+    transform: translateY(-3px);
+}
+
+/* Enhanced Hero */
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #d4af37;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hero-description {
+    font-size: 16px;
+    color: #c0c0c0;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+/* Footer */
+footer {
+    background: #0a0a0a;
+    padding: 40px 50px;
+    text-align: center;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.footer-content p {
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header { padding: 20px; }
+    header nav { display: none; }
+    .hero h1 { font-size: 2.5rem; }
+    .about-content { grid-template-columns: 1fr; }
+    .details-grid { grid-template-columns: 1fr; }
+    .skills-container { grid-template-columns: 1fr; }
+    .cta-buttons { flex-direction: column; }
+    .btn-primary-large, .btn-secondary-large { width: 100%; }
+    .cta-section { padding: 60px 30px; }
+    .about-section { padding: 60px 30px; }
+    .project-details { padding: 40px 30px; }
+}
+/* Styling for the Brief Description Header */
+.about-section {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+    color: #ecf0f1;
+    line-height: 1.7;
+}
+
+/* Headings */
+.about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-section h2 {
+    color: #3498db;
+    font-size: 2rem;
+    margin-top: 40px;
+    border-left: 5px solid #3498db;
+    padding-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about-section h3, 
+.about-section h4 {
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+/* Limiting Social Icon Sizes */
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.social-icon {
+    width: 40px; /* Adjust this value to make them smaller or larger */
+    height: 40px;
+    object-fit: contain; /* Ensures the icon doesn't stretch */
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%); /* Optional: makes them match your black/gold theme */
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    filter: grayscale(0%); /* Brings back color on hover */
+}
+
+/* Phone Contact Link */
+.phone-contact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.phone-contact:hover {
+    color: #d4af37;
+}
+
+.phone-contact:hover .social-icon {
+    transform: scale(1.2);
+    filter: grayscale(0%);
+}
+
+/* Project Card */
+.project-card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid #2c3e50;
+}
+
+/* Design Grid */
+.design-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.design-card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.design-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Skills */
+.skills-list {
+    margin-top: 20px;
+}
+
+.skills-list li {
+    margin-bottom: 10px;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    background: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #2980b9;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #3498db;
+}
+
+.btn-outline:hover {
+    background: #3498db;
+}
