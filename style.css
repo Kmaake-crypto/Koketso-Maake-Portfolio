@@ -111,10 +111,8 @@ header nav a {
     align-items: center;
     text-align: center;
     position: relative;
-    background-image:url(./assests/my\ photo.png) 
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-        
-    background-size: 600px 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./assests/myPhoto.png);
+    background-size: contain;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -602,9 +600,28 @@ footer {
 .project-card {
     background: #1a1a1a;
     padding: 20px;
-    border-radius: 10px;
+    
     margin-top: 20px;
     border: 1px solid #2c3e50;
+}
+
+.tech-badges {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.tech-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #d4af37;
+    color: #000;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 /* Design Grid */
@@ -662,4 +679,281 @@ footer {
 
 .btn-outline:hover {
     background: #3498db;
+}
+/* ... Your existing CSS styles end here ... */
+
+.btn-outline:hover {
+    background: #3498db;
+}
+/* ==================== BASIC CASE STUDIES STYLING ==================== */
+#case-studies {
+    background-color: #000;
+    padding: 60px 20px;
+}
+
+.case-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Individual Project Container Box */
+.case-box {
+    background-color: #0a0a0a;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+
+
+/* Question Layout Blocks */
+.question-block {
+    margin-bottom: 20px;
+}
+
+.question-block h4 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.question-block p {
+    color: #cccccc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Highlighted Navbar Button Configuration */
+.nav-btn {
+    border: 1px solid #d4af37;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #d4af37;
+    color: #000 !important;
+}
+/* ==========================================================================
+   TOOLS & STACK PROFICIENCY STYLING
+   ========================================================================== */
+
+#stack-proficiency {
+    background-color: #000;
+    padding: 80px 50px;
+    position: relative;
+    z-index: 5;
+}
+
+.proficiency-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* Individual Stack Block Panels */
+.stack-card {
+    background: linear-gradient(135deg, #0a0a0a 0%, #111111 100%);
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.stack-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+}
+
+/* Card Header Configuration */
+.stack-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.stack-icon {
+    font-size: 1.5rem;
+}
+
+.stack-card h3 {
+    color: #d4af37;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.stack-intro {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+/* Internal Skills Layout List */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.skill-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.skill-meta strong {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Interactive Link Setups within Evidence Texts */
+.skill-evidence {
+    color: #b8b8b8;
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.skill-evidence a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px dashed rgba(212, 175, 55, 0.4);
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-evidence a:hover {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+/* Status Badges Styling */
+.status-badge {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+.status-badge.master {
+    background-color: rgba(212, 175, 55, 0.15);
+    color: #d4af37;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.status-badge.learning {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile Screen Scaling Adjustments */
+@media (max-width: 768px) {
+    #stack-proficiency {
+        padding: 60px 20px;
+    }
+    .stack-card {
+        padding: 20px;
+    }
+}
+/* ==========================================================================
+   PROFESSIONAL PERSONALITY / ABOUT SECTION STYLING
+   ========================================================================== */
+
+#about {
+    background-color: #000;
+    padding: 80px 50px;
+    position: relative;
+    z-index: 5;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Main Text Container Layout */
+.bio-main {
+    max-width: 850px;
+}
+
+.bio-intro {
+    font-size: 1.5rem;
+    color: #d4af37; /* Premium Gold Accent */
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+.bio-main p {
+    color: #b8b8b8;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Three Core Pillars Horizontal Grid Layout */
+.bio-pillars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.pillar-box {
+    background: linear-gradient(135deg, #0a0a0a 0%, #111111 100%);
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.pillar-box:hover {
+    border-color: #d4af37;
+    transform: translateY(-3px);
+}
+
+.pillar-box h4 {
+    color: #ffffff;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.pillar-box p {
+    color: #888;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Mobile Screen Responsiveness */
+@media (max-width: 768px) {
+    #about {
+        padding: 60px 20px;
+    }
+    .bio-intro {
+        font-size: 1.25rem;
+    }
+    .pillar-box {
+        padding: 20px;
+    }
 }
