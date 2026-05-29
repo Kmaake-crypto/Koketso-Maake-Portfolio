@@ -959,36 +959,19 @@ footer {
 .footer-links a:hover {
     color: #fff;
 }
-
 /* ==========================================================================
-   13. MEDIA QUERIES & SCREEN RESPONSIVENESS OVERRIDES
+   MEDIA QUERIES & SCREEN RESPONSIVENESS OVERRIDES
    ========================================================================== */
-@media (max-width: 900px) {
-    #about-me { padding: 80px 25px 40px; }
-    .about-me-container {
-        grid-template-columns: 1fr; /* Stacks side narrative columns vertically on tablets */
-        gap: 35px;
-    }
-    .about-title { font-size: 2rem; }
-    .about-lead { font-size: 1.18rem; }
-    .philosophy-card:hover { transform: translateY(-5px); }
-}
-
 @media (max-width: 768px) {
+    :root {
+        /* Elements using these variables will instantly update on mobile devices */
+        --primary-bg: #050505;       /* Even deeper pitch black for contrast */
+        --accent-gold: #f4d03f;      /* Brighter, high-visibility gold for small text screens */
+        --text-muted: #d4d4d4;       /* Lighter gray to maximize readability on mobile displays */
+    }
+
+    /* Keep your existing structural mobile overrides cleanly separated below */
     header { padding: 20px; }
-    header nav { display: none; } /* Standard layout switch configuration for navigation on mobile profiles */
+    header nav { display: none; }
     .hero h1 { font-size: 2.5rem; }
-    .about-content { grid-template-columns: 1fr; }
-    .details-grid { grid-template-columns: 1fr; }
-    .skills-container { grid-template-columns: 1fr; }
-    .cta-buttons { flex-direction: column; }
-    .btn-primary-large, .btn-secondary-large { width: 100%; }
-    .cta-section { padding: 60px 30px; }
-    .about-section { padding: 60px 30px; }
-    .project-details { padding: 40px 30px; }
-    #stack-proficiency { padding: 60px 20px; }
-    .stack-card { padding: 20px; }
-    #about { padding: 60px 20px; }
-    .bio-intro { font-size: 1.25rem; }
-    .pillar-box { padding: 20px; }
 }
