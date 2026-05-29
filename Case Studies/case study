@@ -1,0 +1,31 @@
+# Case Study: Immersive Entertainment Interface (Netflix Landing Page)
+
+**Project Link:** [Live Showcase on Netlify](https://koketsosite.netlify.app/)
+**Tech Stack:** HTML, CSS, GitHub, Netlify
+
+
+
+###  Overview & Challenge
+The core objective of this project was to engineer a high-fidelity visual replication of the official Netflix landing page. The challenge went beyond simple layout replication; it required resolving specific technical and structural hurdles:
+* **The Interactivity Dilemma:** Designing an interactive, accordion-style FAQ dropdown block cleanly without using heavy, external programming scripts that would overcomplicate the architecture.
+* **Media Handling:** Embedding and streaming a dynamic video trailer directly within the VS Code development space without breaking performance or crashing layout containers.
+* **Visual Precision:** Crafting the complex structural aesthetic elements, such as the exact curved border divider located right beneath the hero section imagery.
+
+
+
+###  Strategic Coding Decisions
+* **Immersive Identity Palette:** I selected a bold red and solid black color scheme to instantly anchor brand authenticity and mirror the platform's signature streaming identity.
+* **Lightweight Interactivity:** Because I am still expanding my depth of knowledge in advanced programming languages, I chose a highly efficient workaround: using native HTML dropdown tags to build the collapsible FAQ section. This kept the entire project lightweight, incredibly clean, and fully operational without depending on complex scripts.
+
+---
+
+###  Tools Used & Technical Takeaways
+* **Development Workflow:** Mapped out structural assets using semantic HTML, applied the dark premium branding elements using CSS, and safely tracked progress increments using Git and GitHub.
+* **Production Deployment:** Leveraged Netlify's automated hosting pipeline to seamlessly push the development folder to a live web server.
+* **Key Learning Milestone:** I mastered how to target and strip away native browser design defaults. This gave me complete override control over interactive components, ensuring they matched the graphic mockup exactly.
+
+
+
+###  Critical Reflection
+* **What I Would Do Differently:** To maximize my development strategy next time, I would organize the style architecture using global CSS from day one to speed up my overall workflow when adjusting theme properties.
+* **What I Am Proud Of:** I am incredibly proud of achieving a pixel-perfect, high-fidelity user interface that behaves reliably across devices using highly efficient, clean, and elegant code structures.
