@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    /* =========================================================
-       1. THEME TOGGLE (light / dark) - persisted in localStorage
-       ========================================================= */
+    /*1. THEME TOGGLE (light / dark) - persisted in localStorage*/
     const root = document.documentElement;
     const themeToggle = document.getElementById('themeToggle');
     const savedTheme = localStorage.getItem('koketso-theme');
@@ -22,9 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('koketso-theme', next);
     });
 
-    /* =========================================================
-       2. MOBILE HAMBURGER MENU
-       ========================================================= */
+    /*  2. MOBILE HAMBURGER MENU*/
     const hamburger = document.getElementById('hamburger');
     const mobileNav = document.getElementById('mobileNav');
 
@@ -44,9 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', closeMobileNav);
     });
 
-    /* =========================================================
-       3. SCROLL PROGRESS BAR
-       ========================================================= */
+    /*3. SCROLL PROGRESS BAR*/
     const scrollProgress = document.getElementById('scrollProgress');
     function updateScrollProgress() {
         const scrollTop = window.scrollY;
@@ -55,9 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (scrollProgress) scrollProgress.style.width = pct + '%';
     }
 
-    /* =========================================================
-       4. BACK TO TOP BUTTON
-       ========================================================= */
+    /* 4. BACK TO TOP BUTTON*/
     const backToTop = document.getElementById('backToTop');
     function updateBackToTop() {
         if (window.scrollY > 500) {
@@ -70,9 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    /* =========================================================
-       5. SCROLLSPY - highlight active nav link
-       ========================================================= */
+    /* 5. SCROLLSPY - highlight active nav link */
     const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
     const sections = Array.from(navLinks)
         .map((link) => document.querySelector(link.getAttribute('href')))
@@ -108,12 +98,10 @@ document.addEventListener('DOMContentLoaded', () => {
     updateBackToTop();
     updateActiveNav();
 
-    /* =========================================================
-       6. TYPEWRITER EFFECT - types out roles word for word
-       ========================================================= */
+    /* 6. TYPEWRITER EFFECT - types out roles word for word */
     const typedTextEl = document.getElementById('typedText');
     const roles = [
-        'Full-Stack Web Developer Trainee',
+        'Full-Stack Web Developer',
         'Graphic Designer',
         'UI Enthusiast',
         'Problem Solver'
@@ -150,9 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
         typedTextEl.textContent = roles[0];
     }
 
-    /* =========================================================
-       7. ANIMATED STAT COUNTERS
-       ========================================================= */
+    /*7. ANIMATED STAT COUNTERS */
     const statNumbers = document.querySelectorAll('.stat-number');
     function animateCount(el) {
         const target = parseInt(el.getAttribute('data-count'), 10) || 0;
@@ -172,9 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
         requestAnimationFrame(step);
     }
 
-    /* =========================================================
-       8. INTERSECTION OBSERVER - reveal-on-scroll + skill bars + counters
-       ========================================================= */
+    /* 8. INTERSECTION OBSERVER - reveal-on-scroll + skill bars + counters */
     const revealEls = document.querySelectorAll('.reveal');
     const skillBars = document.querySelectorAll('.skill-bar span');
     let countersAnimated = false;
@@ -227,9 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.3 });
     document.querySelectorAll('.stack-card').forEach((card) => skillObserver.observe(card));
 
-    /* =========================================================
-       8b. LIVE-SITE SLIDESHOW (Run4U) - auto-pan when in view
-       ========================================================= */
+    /*8b. LIVE-SITE SLIDESHOW (Run4U) - auto-pan when in view*/
     const siteSlideshows = document.querySelectorAll('.site-slideshow[data-autoplay="true"]');
     if (siteSlideshows.length) {
         const slideshowObserver = new IntersectionObserver((entries) => {
@@ -240,9 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
         siteSlideshows.forEach((el) => slideshowObserver.observe(el));
     }
 
-    /* =========================================================
-       8c. GRAPHIC DESIGN VIDEO CARDS - play on hover / in view
-       ========================================================= */
+    /* 8c. GRAPHIC DESIGN VIDEO CARDS - play on hover / in view */
     const gridVideos = document.querySelectorAll('.grid-video');
     gridVideos.forEach((video) => {
         const wrapper = video.closest('.grid-item-video');
@@ -261,9 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
         videoObserver.observe(video);
     });
 
-    /* =========================================================
-       9. PROJECT FILTER TOGGLE
-       ========================================================= */
+    /*9. PROJECT FILTER TOGGLE */
     const filterBtns = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
 
@@ -281,9 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    /* =========================================================
-       10. COPY EMAIL TO CLIPBOARD
-       ========================================================= */
+    /*10. COPY EMAIL TO CLIPBOARD */
     const copyToast = document.getElementById('copyToast');
     document.querySelectorAll('[data-copy]').forEach((el) => {
         el.addEventListener('click', (e) => {
@@ -303,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* =========================================================
        11. FOOTER YEAR
-       ========================================================= */
+       =======*/
     const footerYear = document.getElementById('footerYear');
     if (footerYear) footerYear.textContent = new Date().getFullYear();
 

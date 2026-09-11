@@ -282,6 +282,24 @@ header {
 .btn-secondary-large { background: transparent; color: var(--gold); border: 2px solid var(--gold); }
 .btn-secondary-large:hover { background: var(--gold); color: #000; transform: translateY(-3px); }
 
+.btn-cv {
+    padding: 15px 38px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 0.4px;
+    background: transparent;
+    color: var(--text);
+    border: 2px solid var(--border);
+    transition: all 0.35s ease;
+}
+.btn-cv::before { content: '↓'; font-size: 1rem; }
+.btn-cv:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-3px); }
+
 .btn-glass {
     padding: 10px 22px;
     border-radius: 25px;
