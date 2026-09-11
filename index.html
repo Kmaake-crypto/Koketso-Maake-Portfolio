@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Koketso Maake | Full-Stack Web Developer &amp; Graphic Designer</title>
+<meta name="description" content="Koketso Maake — Full-Stack Web Developer Trainee and Graphic Designer. Browse web development projects, graphic design work, and personal projects.">
+<meta name="theme-color" content="#050505">
+<link rel="icon" href="./assets/myPhotologo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to content</a>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header id="siteHeader">
+    <div class="nav-wrap">
+        <a href="#top" class="logo" aria-label="Back to top">
+            <img src="./assets/myPhotologo.png" alt="Koketso Maake logo" class="logo-img">
+        </a>
+
+        <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+            <a href="#about-me" class="nav-link">About</a>
+            <a href="#stack-proficiency" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Web Projects</a>
+            <a href="#design" class="nav-link">Design</a>
+            <a href="#personal" class="nav-link">Personal</a>
+            <a href="#contact" class="nav-link nav-btn">Contact Me</a>
+        </nav>
+
+        <div class="nav-controls">
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to light mode" aria-pressed="false">
+                <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+                <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <button type="button" class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#about-me">About</a>
+        <a href="#stack-proficiency">Skills</a>
+        <a href="#projects">Web Projects</a>
+        <a href="#design">Design</a>
+        <a href="#personal">Personal</a>
+        <a href="#contact" class="nav-btn">Contact Me</a>
+    </div>
+</header>
+
+<main id="main-content">
+
+<section class="hero" id="top">
+    <div class="hero-content">
+
+        <div class="hero-photo reveal">
+            <div class="photo-swap">
+                <img src="./assets/profile-main.webp" alt="Koketso Maake standing outside a modern office building" class="photo-base">
+                <img src="./assets/profile-hover.jpg" alt="Koketso Maake smiling outdoors" class="photo-hover">
+            </div>
+            <span class="photo-hint">Hover to say hi 👋</span>
+        </div>
+
+        <div id="about-me" class="about-profile reveal">
+            <p class="typed-role"><span id="typedText" aria-live="polite"></span><span class="typed-cursor" aria-hidden="true">|</span></p>
+            <h1 class="hero-name">Koketso Maake</h1>
+
+            <p class="about-lead">
+                I am Koketso Maake, a Full-Stack Web Developer Trainee and professional Graphic Designer.
+            </p>
+
+            <p class="about-text">
+                I design and build digital experiences that are visually striking and functionally powerful. With a strong foundation in HTML, CSS, and JavaScript, I create responsive, user-focused websites while crafting bold, memorable graphic designs that communicate brand identity with clarity and impact.
+            </p>
+
+            <p class="about-text">
+                I don't just write code, and I don't just design layouts — I treat the web as a canvas for premium user experiences. My journey started in visual branding, logo design, and digital layouts. But I quickly realized that a beautiful design is only half the battle — it needs to live, breathe, and function flawlessly on the screen. That's what drove me into full-stack web development.
+            </p>
+
+            <div class="hero-ctas">
+                <a href="#projects" class="btn-primary-large">View My Work</a>
+                <a href="#contact" class="btn-secondary-large">Let's Connect</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="9">0</span>
+                    <span class="stat-label">Web Projects</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="16">0</span>
+                    <span class="stat-label">Design Projects</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="100">0</span>
+                    <span class="stat-label">% Responsive</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="about-me-more">
+    <div class="about-me-container">
+        <details class="about-draft">
+            <summary>View Portfolio Draft Notes</summary>
+            <div class="draft-content">
+                <h3>Mid-year Portfolio Draft</h3>
+                <p>This portfolio reflects my progress as a Full-Stack Trainee and Professional Graphic Designer.</p>
+                <ul>
+                    <li>Mid-year portfolio draft</li>
+                    <li>Peer contribution evidenced</li>
+                </ul>
+                <p><strong>Summary:</strong></p>
+                <ul>
+                    <li>I build digital experiences that are visually striking and functionally powerful.</li>
+                    <li>My work combines HTML, CSS, JavaScript, and graphic design principles.</li>
+                    <li>I focus on responsive, user-focused websites and bold, memorable visual brand identities.</li>
+                    <li>My portfolio captures both clean code and premium design.</li>
+                </ul>
+            </div>
+        </details>
+
+        <div class="about-philosophy">
+            <div class="philosophy-card reveal">
+                <h4>The Intersection</h4>
+                <p>My work sits at the intersection of creativity and technology — where clean code meets impactful design. I focus on building intuitive user interfaces and responsive layouts that elevate brands.</p>
+            </div>
+
+            <div class="philosophy-card reveal">
+                <h4>Eye For Detail</h4>
+                <p>Because of my design roots, I have an obsessive eye for detail. I care about the things most people skip — the precise weight of a shadow, the smooth transition of a glass menu element, and the logical layout of data on the fly.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="stack-proficiency">
+    <h2 class="section-title">Tools &amp; Stack Proficiency</h2>
+
+    <div class="proficiency-container">
+        <div class="stack-card reveal">
+            <div class="stack-header"><h3>Core Front-End Development</h3></div>
+            <p class="stack-intro">Building clean, semantic structures and highly responsive user interfaces.</p>
+            <ul class="skills-list">
+                <li>
+                    <div class="skill-meta">
+                        <strong>HTML &amp; CSS</strong>
+                        <span class="status-badge master">Proficient</span>
+                    </div>
+                    <div class="skill-bar"><span style="width:90%"></span></div>
+                    <p class="skill-evidence">Applied across all projects. Used Flexbox layouts on the <a href="#tesla-case-study" class="case-link">Tesla Clone</a> and custom filter overlays for the <a href="#ui-screenshot-case-study" class="case-link">UI Screenshot Project</a>.</p>
+                </li>
+                <li>
+                    <div class="skill-meta">
+                        <strong>JavaScript</strong>
+                        <span class="status-badge learning">Deepening</span>
+                    </div>
+                    <div class="skill-bar"><span style="width:68%"></span></div>
+                    <p class="skill-evidence">Used to capture input arrays and update layout nodes in the <a href="#todo-case-study" class="case-link">To-Do List Application</a>. Currently expanding into asynchronous logic.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="stack-card reveal">
+            <div class="stack-header"><h3>Design &amp; Visual Identity</h3></div>
+            <p class="stack-intro">Translating raw graphic mockups into functional, pixel-perfect layout properties.</p>
+            <ul class="skills-list">
+                <li>
+                    <div class="skill-meta">
+                        <strong>Canva &amp; UI Mockups</strong>
+                        <span class="status-badge master">Proficient</span>
+                    </div>
+                    <div class="skill-bar"><span style="width:88%"></span></div>
+                    <p class="skill-evidence">Used to extract asset specs, plan visual hierarchies, and format premium image card assets for case study presentation layouts.</p>
+                </li>
+                <li>
+                    <div class="skill-meta">
+                        <strong>Glassmorphic &amp; Dark Theme UI</strong>
+                        <span class="status-badge master">Proficient</span>
+                    </div>
+                    <div class="skill-bar"><span style="width:85%"></span></div>
+                    <p class="skill-evidence">Proven implementation of transparent layer depths, custom blur parameters, and gold accent styling across multiple portfolio views.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="stack-card reveal">
+            <div class="stack-header"><h3>Platforms &amp; Workflow</h3></div>
+            <p class="stack-intro">Managing source environments, version tracks, and live production deployments.</p>
+            <ul class="skills-list">
+                <li>
+                    <div class="skill-meta">
+                        <strong>Git &amp; GitHub</strong>
+                        <span class="status-badge master">Proficient</span>
+                    </div>
+                    <div class="skill-bar"><span style="width:82%"></span></div>
+                    <p class="skill-evidence">Used daily for codebase version tracking, committing visual layout updates, and cloud file backups.</p>
+                </li>
+                <li>
+                    <div class="skill-meta">
+                        <strong>Netlify &amp; GitHub Pages</strong>
+                        <span class="status-badge master">Proficient</span>
+                    </div>
+                    <div class="skill-bar"><span style="width:90%"></span></div>
+                    <p class="skill-evidence">Successfully handled live hosting configurations for both static landing clones and active JavaScript apps.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Web Development Projects</h2>
+    <p class="section-subtitle">A selection of front-end builds — from pixel-accurate clones to interactive JavaScript apps.</p>
+
+    <div class="filter-toggle" role="group" aria-label="Filter projects by technology">
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="html-css">HTML &amp; CSS</button>
+        <button type="button" class="filter-btn" data-filter="javascript">JavaScript</button>
+        <button type="button" class="filter-btn" data-filter="react">React</button>
+    </div>
+
+    <div class="project-grid">
+
+        <div class="project-card reveal" data-tags="html-css">
+            <img src="./assets/Screenshot 2026-07-04 142100.png" alt="Tesla Landing Page Project" class="project-image" loading="lazy">
+            <div class="card-overlay">
+                <h3>Tesla Landing Page</h3>
+                <p>A technical UI clone built with HTML, CSS, and deployed on Netlify.</p>
+                <div class="tech-badges">
+                    <span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">Netlify</span><span class="tech-badge">GitHub</span>
+                </div>
+                <div class="btn-group">
+                    <a href="https://koketso-tesla-assignment.netlify.app/" target="_blank" rel="noopener" class="btn-glass">Live Demo</a>
+                    <a href="https://github.com/Kmaake-crypto/TESLA-ASSIGNMENT.git" target="_blank" rel="noopener" class="btn-glass">GitHub</a>
+                    <a href="#tesla-case-study" class="btn-glass case-trigger">Case Study</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" data-tags="html-css javascript">
+            <img src="./assets/Screenshot 2026-07-04 143300.png" alt="My To-Do List Project" class="project-image" loading="lazy">
+            <div class="card-overlay">
+                <h3>My To-Do List App</h3>
+                <p>A functional to-do list application built with HTML, CSS, and JavaScript.</p>
+                <div class="tech-badges">
+                    <span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">JavaScript</span><span class="tech-badge">GitHub</span>
+                </div>
+                <div class="btn-group">
+                    <a href="https://kmaake-crypto.github.io/MY-TO-DO-LIST/" target="_blank" rel="noopener" class="btn-glass">Live Demo</a>
+                    <a href="https://github.com/Kmaake-crypto/MY-TO-DO-LIST.git" target="_blank" rel="noopener" class="btn-glass">GitHub</a>
+                    <a href="#todo-case-study" class="btn-glass case-trigger">Case Study</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" data-tags="html-css">
+            <img src="./assets/Screenshot 2026-07-04 143702.png" alt="My Netflix Landing Page Project" class="project-image" loading="lazy">
+            <div class="card-overlay">
+                <h3>Netflix Landing Page</h3>
+                <p>A responsive Netflix landing page clone built with HTML and CSS.</p>
+                <div class="tech-badges">
+                    <span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">GitHub</span><span class="tech-badge">Netlify</span>
+                </div>
+                <div class="btn-group">
+                    <a href="https://koketsosite.netlify.app/" target="_blank" rel="noopener" class="btn-glass">Live Demo</a>
+                    <a href="https://github.com/Kmaake-crypto/Netflix-Landing-Page.git" target="_blank" rel="noopener" class="btn-glass">GitHub</a>
+                    <a href="#netflix-case-study" class="btn-glass case-trigger">Case Study</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" data-tags="html-css">
+            <img src="./assets/Screenshot 2026-07-04 144419.png" alt="My UI Screenshot Project" class="project-image" loading="lazy">
+            <div class="card-overlay">
+                <h3>UI Screenshot Rebuild</h3>
+                <p>A clean and modern UI design translated from a visual reference into real HTML and CSS.</p>
+                <div class="tech-badges">
+                    <span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">GitHub</span><span class="tech-badge">Netlify</span>
+                </div>
+                <div class="btn-group">
+                    <a href="https://koketso-ui-screenshot.netlify.app/" target="_blank" rel="noopener" class="btn-glass">Live Demo</a>
+                    <a href="https://github.com/Kmaake-crypto/The-Brief-UI-Screenshot.git" target="_blank" rel="noopener" class="btn-glass">GitHub</a>
+                    <a href="#ui-screenshot-case-study" class="btn-glass case-trigger">Case Study</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" data-tags="html-css javascript">
+            <img src="./assets/Screenshot 2026-07-04 145114.png" alt="YouTube Clone Project" class="project-image" loading="lazy">
+            <div class="card-overlay">
+                <h3>YouTube Clone</h3>
+                <p>A responsive YouTube UI clone built with HTML, CSS, and JavaScript, deployed on Netlify.</p>
+                <div class="tech-badges">
+                    <span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">JavaScript</span><span class="tech-badge">Netlify</span>
+                </div>
+                <div class="btn-group">
+                    <a href="https://koketsoyoutubecloneassignent.netlify.app/" target="_blank" rel="noopener" class="btn-glass">Live Demo</a>
+                    <a href="https://github.com/Kmaake-crypto/youtube-assign-ment.git" target="_blank" rel="noopener" class="btn-glass">GitHub</a>
+                    <a href="#youtube-case-study" class="btn-glass case-trigger">Case Study</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" data-tags="html-css javascript">
+            <img src="./assets/livesearchbar.png" alt="Live Search Bar Project" class="project-image" loading="lazy">
+            <div class="card-overlay">
+                <h3>Live Search Bar (Group Project)</h3>
+                <p>A responsive search bar component built with HTML, CSS, and JavaScript.</p>
+                <div class="tech-badges">
+                    <span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">JavaScript</span><span class="tech-badge">GitHub</span>
+                </div>
+                <div class="btn-group">
+                    <a href="https://masengodido28-lgtm.github.io/Devclub-live-search-bar102/" target="_blank" rel="noopener" class="btn-glass">Live Demo</a>
+                    <a href="https://github.com/Kmaake-crypto/Devclub-live-search-bar10.git" target="_blank" rel="noopener" class="btn-glass">GitHub</a>
+                    <a href="#searchbar-case-study" class="btn-glass case-trigger">Case Study</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" data-tags="html-css javascript">
+            <img src="./assets/Screenshot 2026-07-04 150034.png" alt="Twitter Landing Page Project" class="project-image" loading="lazy">
+            <div class="card-overlay">
+                <h3>Twitter Landing Page</h3>
+                <p>A clean and modern landing page design built with HTML, CSS, and JavaScript.</p>
+                <div class="tech-badges">
+                    <span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">JavaScript</span><span class="tech-badge">Netlify</span>
+                </div>
+                <div class="btn-group">
+                    <a href="https://koketsotwitter-clone-project.netlify.app/" target="_blank" rel="noopener" class="btn-glass">Live Demo</a>
+                    <a href="https://github.com/Kmaake-crypto/twitter-clone.git" target="_blank" rel="noopener" class="btn-glass">GitHub</a>
+                    <a href="#twitter-case-study" class="btn-glass case-trigger">Case Study</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" data-tags="react javascript">
+            <img src="./assets/bible screenshot.png" alt="My Bible Verses Project" class="project-image" loading="lazy">
+            <div class="card-overlay">
+                <span class="project-highlight">Featured</span>
+                <h3>My Bible Verses</h3>
+                <p>A clean and modern daily-verses application built with React.</p>
+                <div class="tech-badges">
+                    <span class="tech-badge">React</span><span class="tech-badge">GitHub</span><span class="tech-badge">Netlify</span><span class="tech-badge">JavaScript</span>
+                </div>
+                <div class="btn-group">
+                    <a href="https://my-daily-bible-verses.netlify.app/" target="_blank" rel="noopener" class="btn-glass">Live Demo</a>
+                    <a href="https://github.com/Kmaake-crypto/My-Daily-Bible-Verses.git" target="_blank" rel="noopener" class="btn-glass">GitHub</a>
+                    <a href="#bible-case-study" class="btn-glass case-trigger">Case Study</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal" data-tags="react javascript">
+            <img src="./assets/google keep react.png" alt="Google Keep React Clone Project" class="project-image" loading="lazy">
+            <div class="card-overlay">
+                <h3>Google Keep Clone</h3>
+                <p>A note-taking app inspired by Google Keep, built with React.</p>
+                <div class="tech-badges">
+                    <span class="tech-badge">React</span><span class="tech-badge">GitHub</span><span class="tech-badge">Netlify</span><span class="tech-badge">JavaScript</span>
+                </div>
+                <div class="btn-group">
+                    <a href="https://google-keepreact.netlify.app/" target="_blank" rel="noopener" class="btn-glass">Live Demo</a>
+                    <a href="https://github.com/Kmaake-crypto/Google-Keep-React.git" target="_blank" rel="noopener" class="btn-glass">GitHub</a>
+                    <a href="#google-keep-case-study" class="btn-glass case-trigger">Case Study</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="design" class="design-grid">
+    <h2 class="section-title">Graphic Design Projects</h2>
+    <p class="section-subtitle">Brand identities, logos, and event posters designed in Canva and Adobe tools.</p>
+
+    <div class="grid-container">
+        <div class="grid-item reveal">
+            <img src="./assets/Tech Titans Logo png..png" alt="Tech Titans Logo" loading="lazy">
+            <div class="item-info"><h4>Tech Titans</h4><span>Brand Identity &amp; Logo Design</span></div>
+        </div>
+        <div class="grid-item reveal">
+            <img src="./assets/Living Toptier With God Logo.png.png" alt="Living Together With God Logo" loading="lazy">
+            <div class="item-info"><h4>Living Together With God</h4><span>Circular Logo Design</span></div>
+        </div>
+        <div class="grid-item reveal">
+            <img src="./assets/Mordern Dance Event poster.png.png" alt="Modern Dance Event Poster" loading="lazy">
+            <div class="item-info"><h4>Modern Dance</h4><span>Event Poster Design</span></div>
+        </div>
+        <div class="grid-item reveal">
+            <img src="./assets/Music Festival Poster.png.png" alt="Music Festival Poster" loading="lazy">
+            <div class="item-info"><h4>Music Festival</h4><span>Concert Poster Design</span></div>
+        </div>
+        <div class="grid-item reveal">
+            <img src="./assets/Skaters Event Poster.png.png" alt="Skate And Destroy Event Poster" loading="lazy">
+            <div class="item-info"><h4>Skate And Destroy</h4><span>Sports Event Poster</span></div>
+        </div>
+        <div class="grid-item reveal">
+            <img src="./assets/Run4u.png" alt="Run4u Logo" loading="lazy">
+            <div class="item-info"><h4>Run4u</h4><span>Brand Identity &amp; Logo Design</span></div>
+        </div>
+        <div class="grid-item reveal">
+            <img src="./assets/Tshepiso.png" alt="Run4U Business Poster" loading="lazy">
+            <div class="item-info"><h4>Run4U</h4><span>Business Poster Design</span></div>
+        </div>
+        <div class="grid-item reveal">
+            <img src="./assets/Gezi Art.png" alt="Gezi Art Event Poster" loading="lazy">
+            <div class="item-info"><h4>Gezi Art</h4><span>Event Poster Design</span></div>
+        </div>
+        <div class="grid-item reveal">
+            <img src="./assets/25 Main Event Info Poster.png.png" alt="25 Main Recreational Centre Event Poster" loading="lazy">
+            <div class="item-info"><h4>25 Main Info Poster</h4><span>Multi-Event Info Poster</span></div>
+        </div>
+        <div class="grid-item reveal">
+            <img src="./assets/Popetry Reading Event Poster.png.png" alt="Poetry Reading Event Poster" loading="lazy">
+            <div class="item-info"><h4>Poetry Reading</h4><span>Event Poster Design</span></div>
+        </div>
+        <div class="grid-item reveal">
+            <img src="./assets/soccer tournament poster.png" alt="Soccer Tournament Poster" loading="lazy">
+            <div class="item-info"><h4>Soccer Tournament</h4><span>Sports Event Poster</span></div>
+        </div>
+        <div class="grid-item reveal">
+            <img src="./assets/186009.png" alt="Digital Illustration Avatar" loading="lazy">
+            <div class="item-info"><h4>Digital Avatar</h4><span>Illustrated Portrait Design</span></div>
+        </div>
+        <div class="grid-item reveal">
+            <img src="./assets/Prayer and Bible Study Poster.png" alt="Seeking The Lord Prayer and Bible Study Poster" loading="lazy">
+            <div class="item-info"><h4>Seeking The Lord</h4><span>Church Event Instagram Post</span></div>
+        </div>
+        <div class="grid-item reveal">
+            <img src="./assets/Compelling Storytellers Thumbnail.png" alt="The Compelling Story Tellers YouTube Thumbnail" loading="lazy">
+            <div class="item-info"><h4>The Compelling Story Tellers</h4><span>YouTube Thumbnail Design</span></div>
+        </div>
+        <div class="grid-item grid-item-video reveal">
+            <video class="grid-video" src="./assets/compelling-storytellers-teaser.mp4" poster="./assets/compelling-storytellers-teaser-poster.png" muted loop playsinline preload="metadata"></video>
+            <span class="video-badge">▶ Motion</span>
+            <div class="item-info"><h4>The Compelling Story Tellers</h4><span>Animated "Coming Soon" Teaser</span></div>
+        </div>
+        <div class="grid-item reveal">
+            <img src="./assets/Carpet Cleaning Services Poster.png" alt="Carpet Cleaning Services Instagram Post" loading="lazy">
+            <div class="item-info"><h4>Carpet Cleaning Services</h4><span>Local Business Instagram Post</span></div>
+        </div>
+    </div>
+</section>
+
+<section id="personal" class="personal-grid">
+    <h2 class="section-title">Personal Projects</h2>
+    <p class="section-subtitle">Self-initiated builds and side projects driven by curiosity, outside of client and classwork.</p>
+
+    <div class="personal-showcase">
+
+        <div class="personal-project-card reveal">
+            <div class="site-slideshow" data-autoplay="true">
+                <div class="browser-chrome">
+                    <span class="chrome-dot dot-red"></span><span class="chrome-dot dot-yellow"></span><span class="chrome-dot dot-green"></span>
+                    <span class="chrome-url">run4-u-fixed-2.vercel.app</span>
+                </div>
+                <div class="slideshow-viewport">
+                    <iframe class="slideshow-frame" src="https://run4-u-fixed-2.vercel.app/" title="Run4U website live preview" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+                </div>
+            </div>
+            <div class="personal-project-info">
+                <span class="personal-tag">Live Website</span>
+                <h3>Run4U</h3>
+                <p>A live website built for RUN4U, a personal shopping and errand-running service in Johannesburg — carrying the brand's logo and poster identity (see Graphic Design) through into a real, functioning site with a product catalog and WhatsApp ordering. Hover the preview above for an auto-scrolling tour.</p>
+                <div class="btn-group">
+                    <a href="https://run4-u-fixed-2.vercel.app/" target="_blank" rel="noopener" class="btn-glass">Visit Live Site ↗</a>
+                    <a href="#run4u-case-study" class="btn-glass case-trigger">Case Study</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="personal-project-card reveal">
+            <img src="./assets/mzansi.png" alt="Inside Mzansi Website Project" class="personal-project-image" loading="lazy">
+            <div class="personal-project-info">
+                <span class="personal-tag">Passion Project</span>
+                <h3>Inside Mzansi Website</h3>
+                <p>A clean and modern website design built with HTML, CSS, and JavaScript — a self-driven build exploring South African culture and identity through web design.</p>
+                <div class="tech-badges">
+                    <span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">JavaScript</span><span class="tech-badge">Netlify</span>
+                </div>
+                <div class="btn-group">
+                    <a href="https://inside-mzansi.netlify.app/" target="_blank" rel="noopener" class="btn-glass">Live Demo</a>
+                    <a href="https://github.com/Kmaake-crypto/INSIDE-MZANSI-VML.git" target="_blank" rel="noopener" class="btn-glass">GitHub</a>
+                    <a href="#mzansi-case-study" class="btn-glass case-trigger">Case Study</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="personal-card reveal">
+            <span class="personal-tag">In Progress</span>
+            <h3>Your Next Personal Project</h3>
+            <p>Add a side project, open-source contribution, or passion build here — what problem it solves, the stack you used, and a link to the live demo or repo.</p>
+            <a href="https://github.com/Kmaake-crypto" target="_blank" rel="noopener" class="btn-glass">Add on GitHub</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="cta-content">
+        <h2>Let's Build Something Great</h2>
+        <p>Open to internships, junior developer roles, freelance design work, and collaborations.</p>
+        <div class="cta-buttons">
+            <a href="mailto:koketsomaake295@gmail.com" class="btn-primary-large">Email Me</a>
+            <a href="https://www.linkedin.com/in/koketso-maake-991540334" target="_blank" rel="noopener" class="btn-secondary-large">Connect on LinkedIn</a>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p class="section-subtitle">Feel free to reach out for collaborations, opportunities, or just to say hello!</p>
+
+    <div class="contact-cards">
+        <a class="contact-card" href="mailto:koketsomaake295@gmail.com" data-copy="koketsomaake295@gmail.com">
+            <img src="./assets/gmail.png" alt="" class="social-icon">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">koketsomaake295@gmail.com</span>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/koketso-maake-991540334" target="_blank" rel="noopener">
+            <img src="./assets/linkedin.png" alt="" class="social-icon">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">koketso-maake</span>
+        </a>
+        <a class="contact-card" href="https://github.com/Kmaake-crypto" target="_blank" rel="noopener">
+            <img src="./assets/github.png" alt="" class="social-icon">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">Kmaake-crypto</span>
+        </a>
+        <a class="contact-card" href="https://www.instagram.com/koketso_graced/" target="_blank" rel="noopener">
+            <img src="./assets/instagram.png" alt="" class="social-icon">
+            <span class="contact-label">Instagram</span>
+            <span class="contact-value">koketso_graced</span>
+        </a>
+        <a class="contact-card" href="https://wa.me/27616368479" target="_blank" rel="noopener">
+            <img src="./assets/phone.png" alt="" class="social-icon">
+            <span class="contact-label">WhatsApp</span>
+            <span class="contact-value">+27 61 636 8479</span>
+        </a>
+    </div>
+    <p class="copy-toast" id="copyToast" role="status" aria-live="polite">Email copied to clipboard</p>
+</section>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <a href="#top" class="logo footer-logo" aria-label="Back to top">
+            <img src="./assets/myPhotologo.png" alt="Koketso Maake logo" class="logo-img">
+        </a>
+        <div class="footer-links">
+            <a href="#about-me">About</a>
+            <a href="#projects">Web Projects</a>
+            <a href="#design">Design</a>
+            <a href="#personal">Personal</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <p>&copy; <span id="footerYear"></span> Koketso Maake. All rights reserved.</p>
+    </div>
+</footer>
+
+<button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<div id="case-study-modal" class="case-study-modal" aria-hidden="true">
+    <div class="case-study-modal-content" role="dialog" aria-modal="true" tabindex="-1">
+        <button type="button" class="case-study-close" aria-label="Close case study">&times;</button>
+        <div id="case-study-modal-body"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
