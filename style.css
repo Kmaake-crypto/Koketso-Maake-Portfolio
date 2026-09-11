@@ -464,8 +464,16 @@ header {
 
 .skills-list { display: flex; flex-direction: column; gap: 22px; }
 
-.skill-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.skill-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
 .skill-meta strong { font-size: 0.98rem; font-weight: 600; }
+
+.skill-icon {
+    font-size: 1.3rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+/* GitHub icon is dark — invert in dark mode so it shows */
+[data-theme="dark"] .devicon-github-original { filter: invert(1); }
 
 .skill-bar {
     width: 100%;
