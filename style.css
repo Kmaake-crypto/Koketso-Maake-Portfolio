@@ -648,8 +648,10 @@ header {
     background: var(--bg-elevated);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    max-width: 560px;
+    max-width: 580px;
     width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
     padding: 40px;
     position: relative;
     box-shadow: 0 30px 80px rgba(0,0,0,0.6);
@@ -674,6 +676,17 @@ header {
 .case-study-modal-box h3 { font-family: var(--serif); color: var(--gold); font-size: 1.5rem; margin-bottom: 14px; }
 .case-study-modal-box p { color: var(--text-muted); margin-bottom: 18px; line-height: 1.6; }
 .case-study-modal-box ul { list-style: disc; margin-left: 20px; color: var(--text); display: flex; flex-direction: column; gap: 8px; }
+
+.cs-block { margin-bottom: 18px; }
+.cs-label {
+    font-family: var(--sans);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 7px;
+}
 
 body.modal-open { overflow: hidden; }
 

@@ -289,102 +289,126 @@ document.addEventListener('DOMContentLoaded', () => {
     const caseStudyContent = {
         'tesla-case-study': {
             title: 'Tesla Landing Page Clone',
-            summary: 'A polished landing page clone focused on premium spacing, full-screen hero presentation, and responsive layout behavior.',
+            summary: 'A pixel-accurate clone of the Tesla homepage focused on premium spacing, full-screen hero presentation, and responsive layout.',
+            problem: 'Recreating a premium brand\'s web presence requires more than copying layout — it demands understanding how whitespace, typography weight, and full-bleed imagery combine to communicate luxury and trust.',
+            solution: 'Built the hero section using full-viewport height with carefully tuned CSS positioning. Matched Tesla\'s font weights and spacing ratios to preserve the brand\'s premium feel across desktop and mobile.',
             points: [
-                'Built a visually clean layout that mirrors the Tesla brand feel.',
-                'Used CSS positioning and responsive design to keep content centered and readable.',
-                'Learned how to create immersive hero sections without breaking on smaller screens.'
+                'Full-screen hero section with overlay text and CTA buttons.',
+                'CSS Flexbox used for section layout and nav alignment.',
+                'Responsive breakpoints ensure no content breaks on smaller screens.'
             ]
         },
         'todo-case-study': {
             title: 'My To-Do List Application',
-            summary: 'A functional app that lets users add, complete, and remove tasks while keeping the interface simple and interactive.',
+            summary: 'A functional task manager that lets users add, complete, and remove tasks with a clean and interactive interface.',
+            problem: 'Building a to-do app sounds simple — but managing live DOM updates, state changes, and user interactions without a framework requires careful JavaScript structure.',
+            solution: 'Used vanilla JavaScript to capture user input, push tasks into an array, and dynamically render list items. Each task has its own delete and complete toggle tied directly to DOM events.',
             points: [
-                'Implemented interactive task behavior with JavaScript.',
-                'Focused on clarity and a clean task flow for users.',
-                'Learned how to update the DOM dynamically based on user actions.'
+                'Dynamic task creation and removal via DOM manipulation.',
+                'Completion toggle updates visual state without a page reload.',
+                'Clean UI keeps focus on usability over decoration.'
             ]
         },
         'netflix-case-study': {
             title: 'Netflix Landing Page Project',
-            summary: 'A responsive landing page that recreates the feel of the Netflix homepage with a focus on structure and visual identity.',
+            summary: 'A responsive Netflix homepage clone focused on structure, dark theme identity, and content hierarchy.',
+            problem: 'Netflix\'s homepage uses a layered dark aesthetic with bold headers and clear CTAs — replicating it means handling background overlays, gradient text, and responsive content stacking correctly.',
+            solution: 'Structured the page using semantic HTML sections with background image overlays and linear gradients. Used CSS Grid for the feature rows and ensured the email CTA section collapsed cleanly on mobile.',
             points: [
-                'Recreated the key hero area and content sections with HTML and CSS.',
-                'Built a polished dark theme that reflects the platform\u2019s brand.',
-                'Improved layout skills through careful spacing and component structure.'
+                'Dark theme with gradient overlays on the hero background image.',
+                'Feature section rows built with CSS Grid for alignment.',
+                'Responsive stacking of content blocks on small screens.'
             ]
         },
         'ui-screenshot-case-study': {
             title: 'UI Screenshot Layout Project',
-            summary: 'A design-focused front-end build translated from a visual reference into a real webpage.',
+            summary: 'A front-end build that translates a static visual design reference into a real, working webpage.',
+            problem: 'Given only a screenshot as a reference, the challenge was to reverse-engineer spacing, font sizes, component structure, and overlay effects without any design file or measurements.',
+            solution: 'Used browser DevTools to estimate proportions and rebuilt the layout from scratch using HTML and CSS. Focused on visual hierarchy, transparent UI layers, and matching the original\'s composition as closely as possible.',
             points: [
-                'Focused on accurate layout matching and visual hierarchy.',
-                'Learned how to layer transparent UI elements and overlays elegantly.',
-                'Improved precision in spacing, padding, and component composition.'
+                'Layout reconstructed purely from visual inspection.',
+                'Transparent UI elements and filter overlays applied with CSS.',
+                'Precise spacing and padding tuned to match the reference closely.'
             ]
         },
         'youtube-case-study': {
             title: 'YouTube Clone Project',
-            summary: 'A responsive video gallery experience designed to feel familiar and modern while staying lightweight.',
+            summary: 'A responsive YouTube UI clone that replicates the video grid, sidebar, and navigation structure.',
+            problem: 'YouTube\'s interface is dense — a sidebar, a top nav, and a responsive video grid that needs to reflow cleanly across screen sizes without losing its familiar structure.',
+            solution: 'Used CSS Grid for the video card layout with auto-fill columns that reflow at breakpoints. Built the sidebar and top nav as fixed components and used JavaScript to handle basic interaction states.',
             points: [
-                'Organized content into a flexible card-based layout.',
-                'Used CSS and JavaScript to improve the overall browsing experience.',
-                'Learned how to build responsive content areas that adapt smoothly to different screen sizes.'
+                'Responsive video grid using CSS Grid with auto-fill columns.',
+                'Sidebar and top navigation match YouTube\'s structure.',
+                'JavaScript handles hover states and basic UI interactions.'
             ]
         },
         'twitter-case-study': {
             title: 'Twitter Landing Page Project',
-            summary: 'A clean social-style landing page designed with a simple structure and polished visual balance.',
+            summary: 'A clean social-style landing page with a two-column layout, polished typography, and modern visual balance.',
+            problem: 'Twitter\'s landing page relies on a confident two-column split — bold headline on one side, sign-up form on the other — and getting that balance right on all screen sizes is the core challenge.',
+            solution: 'Used Flexbox to build the two-column split with a clear visual hierarchy. Styled the form elements and buttons to match the brand\'s signature blue while adding JavaScript for subtle interactive touches.',
             points: [
-                'Built a clear two-column layout with thoughtful spacing.',
-                'Focused on readability, contrast, and modern UI feel.',
-                'Improved understanding of responsive web page composition.'
+                'Two-column Flexbox layout with responsive stacking on mobile.',
+                'Brand-consistent button and input styling.',
+                'JavaScript adds interactive feedback to form elements.'
             ]
         },
         'searchbar-case-study': {
-            title: 'Live Search Bar Project',
-            summary: 'A responsive search experience designed to feel fast, modern, and intuitive for users.',
+            title: 'Live Search Bar — Group Project',
+            summary: 'A responsive live search component that filters results in real time as the user types.',
+            problem: 'Search bars that feel instant require filtering logic that runs on every keystroke without causing layout shifts or delays — and the UI needs to communicate results clearly without clutter.',
+            solution: 'Built the filter function in JavaScript using input event listeners and array filtering. Results update live with each keypress and the UI highlights matching terms. Collaborated via GitHub with team members for version control.',
             points: [
-                'Implemented a live search interaction with JavaScript.',
-                'Focused on a clean interface that works well on mobile and desktop.',
-                'Learned how to tie user input directly to visible results in real time.'
+                'Live filtering on every keypress using JavaScript event listeners.',
+                'Array filter logic matches input against a dataset in real time.',
+                'Collaborated on GitHub — merged branches and resolved conflicts.'
             ]
         },
         'bible-case-study': {
-            title: 'My Bible Verses Project',
-            summary: 'A simple and welcoming app experience focused on browsing and finding Bible verses with ease.',
+            title: 'My Bible Verses App',
+            summary: 'A daily Bible verse app built with React that lets users browse and read verses with a clean, focused interface.',
+            problem: 'Displaying structured scripture data in a readable, navigable way requires a component architecture that keeps content organised and the interface distraction-free.',
+            solution: 'Built using React with a component-based structure — verse data is stored and passed through props, with state managing the currently displayed verse. The UI is intentionally minimal to keep the reading experience calm.',
             points: [
-                'Built a user-friendly interface centered on readability and navigation.',
-                'Used React-based structure to keep the project organized.',
-                'Learned how to present content clearly in a minimal, focused layout.'
+                'React component structure with props and state for verse display.',
+                'Minimal UI designed around readability and focus.',
+                'Deployed on Netlify with clean routing for direct verse access.'
             ]
         },
         'google-keep-case-study': {
-            title: 'Google Keep React App',
-            summary: 'A note-taking inspired app designed to feel practical, bright, and easy to interact with.',
+            title: 'Google Keep React Clone',
+            summary: 'A note-taking app inspired by Google Keep, built with React, featuring note creation, colour coding, and deletion.',
+            problem: 'A note app needs to feel lightweight and instant — adding, editing, and deleting notes should feel fluid, and the card grid layout must reflow cleanly as notes are added or removed.',
+            solution: 'Used React state to manage the notes array, rendering each note as a reusable card component. The add/delete flow updates state directly and the grid reflows using CSS auto-fill columns.',
             points: [
-                'Created a lightweight note-based experience with a clean UI.',
-                'Focused on usability, interaction flow, and visual simplicity.',
-                'Learned how to structure a React project around reusable content blocks.'
+                'React state manages the full notes array dynamically.',
+                'Reusable NoteCard component renders each note independently.',
+                'CSS Grid auto-fill layout reflows as notes are added or removed.'
             ]
         },
         'run4u-case-study': {
             title: 'RUN4U Website',
-            summary: 'A personal project extending the RUN4U brand identity — first designed as a logo and poster (see Graphic Design) — into a live website for a personal shopping and errand-running service in Johannesburg.',
+            summary: 'A live website built for RUN4U — a personal shopping and errand-running service in Johannesburg — extending the brand identity from logo and poster design into a fully functioning site.',
+            problem: 'RUN4U needed more than a brochure site — customers needed to browse a real product catalog, understand pricing, and place orders fast without a complex checkout system.',
+            solution: 'Built a browsable catalog with category filters and a deposit cost calculator. Every product links to a pre-filled WhatsApp message so customers can order in one tap. The brand identity from the logo and poster designs (see Graphic Design) was carried through into the site\'s visual language.',
             points: [
-                'Carried a single brand identity across both graphic design and web development.',
-                'Built a browsable product catalog with category filters and a deposit cost calculator.',
-                'Connected every product directly to a pre-filled WhatsApp order message for fast, real ordering.',
-                'Deployed and hosted live on Vercel for real-world access.'
+                'Product catalog with category filter built in JavaScript.',
+                'Deposit calculator updates costs dynamically per selection.',
+                'One-tap WhatsApp ordering via pre-filled message links.',
+                'Brand identity consistent across graphic design and web build.',
+                'Deployed and live on Vercel for real-world customer access.'
             ]
         },
         'mzansi-case-study': {
             title: 'Inside Mzansi Website',
-            summary: 'A brand-style website project built to practice structuring multi-section pages with clean, modern styling.',
+            summary: 'A self-driven brand-style website exploring South African culture and identity through bold editorial web design.',
+            problem: 'Building a multi-section editorial site from scratch — without a template — requires planning clear content hierarchy, consistent visual identity, and smooth section-to-section flow.',
+            solution: 'Structured the site around distinct content panels with a consistent typographic system and colour palette. Used JavaScript for interactive elements and scroll-based transitions. Deployed and version-controlled end-to-end on GitHub and Netlify.',
             points: [
-                'Structured a multi-section site with clear visual hierarchy.',
-                'Used JavaScript to add small interactive touches across the page.',
-                'Practiced deploying and version-controlling a full project end-to-end.'
+                'Multi-section editorial layout with strong typographic hierarchy.',
+                'Consistent visual identity across all panels.',
+                'JavaScript powers scroll interactions and animated transitions.',
+                'Full Git workflow — committed, pushed, and deployed on Netlify.'
             ]
         }
     };
@@ -408,8 +432,18 @@ document.addEventListener('DOMContentLoaded', () => {
         caseStudyModalBody.innerHTML = `
             <div class="case-study-modal-box">
                 <h3>${content.title}</h3>
-                <p>${content.summary}</p>
-                <ul>${content.points.map((point) => `<li>${point}</li>`).join('')}</ul>
+                <div class="cs-block">
+                    <h4 class="cs-label">Problem</h4>
+                    <p>${content.problem}</p>
+                </div>
+                <div class="cs-block">
+                    <h4 class="cs-label">Solution</h4>
+                    <p>${content.solution}</p>
+                </div>
+                <div class="cs-block">
+                    <h4 class="cs-label">Key Highlights</h4>
+                    <ul>${content.points.map((point) => `<li>${point}</li>`).join('')}</ul>
+                </div>
             </div>
         `;
 
