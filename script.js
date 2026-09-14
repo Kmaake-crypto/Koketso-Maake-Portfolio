@@ -101,10 +101,11 @@ document.addEventListener('DOMContentLoaded', () => {
     /* 6. TYPEWRITER EFFECT - types out roles word for word */
     const typedTextEl = document.getElementById('typedText');
     const roles = [
-        'Full-Stack Web Developer',
+        'Front-End Developer',
+        'React Developer',
+        'UI / UX Builder',
         'Graphic Designer',
-        'UI Enthusiast',
-        'Problem Solver'
+        'Full-Stack Capable'
     ];
 
     if (typedTextEl && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
