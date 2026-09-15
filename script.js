@@ -410,6 +410,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 'JavaScript powers scroll interactions and animated transitions.',
                 'Full Git workflow, committed, pushed, and deployed on Netlify.'
             ]
+        },
+        'grace-house-case-study': {
+            title: 'The Grace House Airbnb',
+            problem: 'Building a full-stack rental platform requires connecting a React front-end to a live backend, pulling real property data from an external API, managing bookings in a database, and making the whole experience feel polished enough for real users.',
+            solution: 'Built a complete full-stack app with a React and Tailwind CSS front-end powered by a Node.js and Express backend. Integrated the Tapline API for live South African property listings with ZAR pricing, used MongoDB to store and manage bookings, added a real OpenStreetMap integration for property locations, and deployed both the client and server live on Render.',
+            points: [
+                'Live property listings via Tapline API with ZAR pricing.',
+                'MongoDB backend stores bookings end-to-end.',
+                'Booking modal with date selection and confirmation flow.',
+                'Real OSM map renders property locations dynamically.',
+                'Dark mode with a custom teal colour palette throughout.',
+                'Full-stack: React, Vite, Node.js, Express, MongoDB.',
+                'Deployed live on Render for real-world access.'
+            ]
         }
     };
 
