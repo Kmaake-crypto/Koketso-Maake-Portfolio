@@ -785,7 +785,76 @@ body.modal-open { overflow: hidden; }
 .personal-card h3 { font-family: var(--serif); font-size: 1.2rem; }
 .personal-card p { color: var(--text-muted); font-size: 0.92rem; line-height: 1.65; }
 
-/* Personal Projects: real showcase cards (Run4U + Inside Mzansi) */
+/* Capstone featured card — full width, two-column layout */
+.capstone-card {
+    grid-column: 1 / -1;
+    background: var(--bg-card);
+    border: 1px solid var(--gold);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 0 0 1px rgba(212,175,55,0.1), var(--shadow);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.capstone-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 40px rgba(212,175,55,0.15), var(--shadow);
+}
+
+.capstone-image-wrap {
+    position: relative;
+    overflow: hidden;
+    min-height: 320px;
+}
+.capstone-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.5s ease;
+}
+.capstone-card:hover .capstone-image { transform: scale(1.04); }
+
+.capstone-badge {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    background: var(--gold);
+    color: #000;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.capstone-info {
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+}
+.capstone-info h3 {
+    font-family: var(--serif);
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    line-height: 1.2;
+}
+.capstone-info p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .capstone-card { grid-template-columns: 1fr; }
+    .capstone-image-wrap { min-height: 220px; }
+    .capstone-info { padding: 26px; }
+}
+
+
 .personal-showcase {
     max-width: 1200px;
     margin: 0 auto 30px;
