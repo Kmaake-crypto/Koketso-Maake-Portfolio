@@ -410,25 +410,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 'JavaScript powers scroll interactions and animated transitions.',
                 'Full Git workflow, committed, pushed, and deployed on Netlify.'
             ]
-        },
-        'grace-house-case-study': {
-            title: 'The Grace House Airbnb — Full-Stack Web Application',
-            summary: 'A full-stack Airbnb-style short-term rental platform for South African properties, built with React, Express, MongoDB, and Tailwind CSS. The biggest and most technically complex project in this portfolio.',
-            problem: 'Building a production-grade rental platform requires solving multiple hard problems simultaneously: live property data from an external API, a real database for bookings, ZAR currency throughout, a working booking flow, dark mode theming, interactive maps, and deployment across two separate cloud services.',
-            solution: 'Architected a monorepo with a React/Vite frontend (client/) and an Express/MongoDB backend (server/). Integrated the Tapline Airbnb API for live South African listings with static fallback data. Built a 3-step booking modal that saves confirmed reservations to MongoDB Atlas. Implemented class-based dark mode using CSS variables and a teal palette (#016764 / #001E1E). Added OpenStreetMap embeds that re-centre per city. Deployed frontend as a Static Site on Render and backend as a Web Service on Render, connected to MongoDB Atlas.',
-            points: [
-                'React 19 + Vite 8 frontend with React Router, Context API for theme and auth.',
-                'Express 5 REST API with 15+ endpoints across listings, bookings, and users.',
-                'MongoDB Atlas database with Mongoose schemas — Listing, Booking, User models.',
-                'Tapline Airbnb API integration returning live South African listings in ZAR.',
-                'Full dark mode system using CSS custom properties and Tailwind darkMode: class.',
-                '3-step BookingModal — date picker, ZAR price breakdown, confirmation ref from MongoDB.',
-                'OpenStreetMap iframes per city (Cape Town, Johannesburg, Durban, Stellenbosch, Kruger).',
-                'Dashboard with live stat cards, reservation management, and listing CRUD.',
-                'CreateListing form with image upload preview, amenity chips, and validation.',
-                'Separate client/ and server/ deployment on Render with CORS and proxy configuration.',
-                'Custom 404 page, mobile hamburger nav, scroll-to-top, and toast notifications.'
-            ]
         }
     };
 
