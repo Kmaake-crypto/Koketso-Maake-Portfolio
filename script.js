@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* 6. TYPEWRITER EFFECT - types out roles word for word */
     const typedTextEl = document.getElementById('typedText');
     const roles = [
-        'Full-Stack Web Developer',
+        'UI/UX Designer',
         'Graphic Designer',
         'UI Enthusiast',
         'Problem Solver'
